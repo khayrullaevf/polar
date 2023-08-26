@@ -106,9 +106,6 @@ nav img {
 }
 
 .hero {
-  max-width: 1536px;
-  width: 100%;
-  margin: 0 auto;
   background: #fbf0f4;
   height: 862px;
 }
@@ -346,6 +343,11 @@ nav img {
   font-weight: 500;
   line-height: normal;
   cursor: pointer;
+}
+.see-details:hover {
+  background-color: #fafafa;
+  border: 2px solid #d23166;
+  color: #d23166;
 }
 .details-bg {
   margin-bottom: 40px;
