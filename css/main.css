@@ -17,6 +17,9 @@
   src: url("../fonts/FredokaOne-Regular.ttf");
 }
 
+html,body{
+  overflow-x: hidden;
+}
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
@@ -37,6 +40,12 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   list-style: none;
+}
+:root {
+  --primary-color--pink: #d23166;
+  --secondary--color--bg: #fbf0f4;
+  --text--opacity--color:#736767;
+  --footer-bg-color:#0a0808;
 }
 
 .container {
@@ -72,7 +81,7 @@ nav img {
 }
 
 .navbar-links a {
-  color: #736767;
+  color: var(--text--opacity--color);
   font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
@@ -82,7 +91,7 @@ nav img {
   outline: none;
 }
 .navbar-links a:hover {
-  color: #d23166;
+  color: var(--primary-color--pink);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -94,7 +103,7 @@ nav img {
   width: 165px;
   height: 49px;
   border-radius: 5px;
-  background: #d23166;
+  background: var(--primary-color--pink);
   color: #fafafa;
   font-family: "Hind Madurai", sans-serif;
   font-size: 16px;
@@ -106,15 +115,15 @@ nav img {
 }
 .buy-now:hover {
   background-color: #fafafa;
-  border: 2px solid #d23166;
-  color: #d23166;
+  border: 2px solid  var(--primary-color--pink);
+  color:var(--primary-color--pink);
 }
 .buy-now-2 {
   margin-top: 50px;
 }
 
 .hero {
-  background: #fbf0f4;
+  background: var(--secondary--color--bg);
   height: 862px;
 }
 
@@ -168,22 +177,21 @@ nav img {
 }
 .hero-text span {
   opacity: 0.9;
-  color: #d23166;
-  font-family: "Fredoka", sans-serif;
+  color: var(--primary-color--pink);
+  font-family: "Fredoka one", sans-serif;
   font-size: 57.33px;
   font-style: normal;
   font-weight: 600;
   line-height: 120.5%;
 }
 .hero-text h2 {
-  color: #0f0101;
+  color: var(--text--opacity--color);
   font-family: "Hind Madurai", sans-serif;
 
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px; /* 150% */
-  opacity: 0.6;
   width: 523px;
   height: 78px;
 }
@@ -259,7 +267,7 @@ nav img {
 }
 .delivery-card h3 {
   text-align: center;
-  color: #000;
+  color: var(--text--opacity--color);
   font-family: "Hind Madurai", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -267,12 +275,12 @@ nav img {
   line-height: normal;
   width: 198px;
   height: 35px;
-  opacity: 0.6;
+  
 }
 
 .details {
   height: 544.495px;
-  background: #fbf0f4;
+  background: var(--secondary--color--bg);
   margin-bottom: 137px;
 }
 
@@ -316,13 +324,12 @@ nav img {
 .details-text h3 {
   width: 442px;
   height: 58.16px;
-  color: #150101;
+  color: var(--text--opacity--color);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
-  opacity: 0.6;
   margin-top: 16px;
 }
 
@@ -332,7 +339,7 @@ nav img {
   height: 49.135px;
   border: none;
   border-radius: 5px;
-  background: #d64374;
+  background: var(--primary-color--pink);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,8 +359,8 @@ nav img {
 }
 .see-details:hover {
   background-color: #fafafa;
-  border: 2px solid #d23166;
-  color: #d23166;
+  border: 2px solid var(--primary-color--pink);
+  color: var(--primary-color--pink);
 }
 .details-bg {
   margin-bottom: 40px;
@@ -396,13 +403,13 @@ nav img {
 .product-nav a {
   text-decoration: none;
   outline: none;
-  color: #000;
+  color: var(--text--opacity--color);
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  opacity: 0.6;
+  padding-bottom: 5px;
 }
 .product-nav li:hover a {
   color: #000000;
@@ -411,7 +418,7 @@ nav img {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border-bottom: 3px solid #d64374;
+  border-bottom: 3px solid var(--primary-color--pink);
 }
 
 .product-1,
@@ -449,13 +456,12 @@ nav img {
 .product-2 p {
   width: 454px;
   height: 67px;
-  color: #000;
+  color: var(--text--opacity--color);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
-  opacity: 0.7;
   margin-bottom: 34px;
   margin-top: 11px;
 }
@@ -474,14 +480,14 @@ nav img {
 .product-1 span,
 .product-2-text span {
   font-family: "Hind Madurai", sans-serif;
-  color: #000;
+  color: var(--text--opacity--color);
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   -webkit-text-decoration-line: strikethrough;
   text-decoration-line: strikethrough;
-  opacity: 0.7;
+
 }
 
 .product-2 {
@@ -628,7 +634,7 @@ nav img {
 
 .download {
   height: 639px;
-  background: #fbf0f4;
+  background: var(--secondary--color--bg);
   margin-bottom: 144px;
 }
 .addtobag {
@@ -724,14 +730,13 @@ nav img {
   margin-top: 129px;
 }
 .download-title h3 {
-  color: #0f0101;
+  color: var(--text--opacity--color);
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.18px;
-  opacity: 0.7;
   width: 607px;
   height: 60px;
   margin-top: 20px;
@@ -837,6 +842,16 @@ nav img {
   border: none;
   outline: none;
 }
+.send:hover {
+  background-color: #fafafa;
+  border: 2px solid var(--primary-color--pink);
+  color: var(--primary-color--pink);
+}
+.subscribe-us:hover {
+  background-color: transparent;
+  border: 2px solid var(--primary-color--pink);
+  color: var(--primary-color--pink);
+}
 
 .question-type {
   width: 303px;
@@ -882,7 +897,7 @@ nav img {
 .footer {
   height: 544.495px;
   margin: 0 auto;
-  background: #0a0808;
+  background: var(--footer-bg-color);
   height: 381px;
 }
 .footer-main {
@@ -1053,7 +1068,7 @@ nav img {
   border: none;
   width: 125px;
   border-radius: 5px 2px 2px 5px;
-  background: #d23166;
+  background: var(--primary-color--pink);
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
